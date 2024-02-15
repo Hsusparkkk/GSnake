@@ -102,7 +102,7 @@ function playAgain(){
     gameBoxCont.font =" 10pt Arial  ";
     gameBoxCont.fillStyle =" #2c6565 "
     gameBoxCont.textAlign =" center ";
-    gameBoxCont.fillText("Press any Keys to playAgain.",gameBox.width/2.7,gameBox.height/1.85,800);
+    gameBoxCont.fillText("Press any Key to playAgain.",gameBox.width/2.7,gameBox.height/1.85,800);
     body.addEventListener("keypress",innerPlayAgain)
     
 }
@@ -138,7 +138,7 @@ function setSnakePos(){
 }
 
 function isWin(){
-    if(score>=99999){
+    if(score>=100){
         showWin();
         playAgain();
         return true
